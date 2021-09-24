@@ -14,7 +14,7 @@ function App() {
     // console.log(authService.currentUser);
     // setIsLoggedIn(authService.currentUser);
     authService.onAuthStateChanged((user)=>{
-      if(user){ //인자값이 user
+       if(user){ //인자값이 user
         // user가 있으면 로그인
         setIsLoggedIn(user);
       }else{
