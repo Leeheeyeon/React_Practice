@@ -1,3 +1,11 @@
-const Home = () => <span>🏘️Home🏘️</span>
+const Home = () => {
 
+
+    return(
+        <span>홈쓰인디 ◖⚆ᴥ⚆◗</span>
+       
+    )
+
+
+}
 export default Home;

@@ -25,3 +25,4 @@ export const storageService = firebase.storage();
 export const firebaseInstance = firebase;
 // 여러개의 컴포넌트를 반환하기 위해 각각 따로 코드 작성하는 것!
 // ()를 붙인 것은 메소드이고, ()를 안붙인 firebase는 객체임다
+
