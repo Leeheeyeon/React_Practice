@@ -8,7 +8,7 @@ import Navigation from "./Navigation.js"
 
 // ()안에 isLoggedIn를 써서 구조분해가 바로 일어나도록 한 것, 
 // {}를 쓰면 자바스크립트언어로 바로 사용가능하다.
-const AppRouter = ({isLoggedIn}) => {
+const AppRouter = ({ isLoggedIn, userObj }) => {
     // 함수의 내부 - 연산, 호출 ...
     return (
         <Router>
@@ -18,7 +18,7 @@ const AppRouter = ({isLoggedIn}) => {
                 {isLoggedIn ? (
                     <>
                     <Route exact path="/">
-                        <Home />
+                        <Home userObj={userObj} />
                     </Route>
                     <Route exact path="/profile">
                         <Profile />
